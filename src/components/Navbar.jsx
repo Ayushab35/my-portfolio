@@ -3,27 +3,16 @@
 import {
   Box,
   Flex,
-  Avatar,
   HStack,
-  Text,
   IconButton,
   Button,
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-  MenuDivider,
   useDisclosure,
   useColorModeValue,
   Stack,
 } from "@chakra-ui/react";
-import { HamburgerIcon, CloseIcon, AddIcon , DownloadIcon } from "@chakra-ui/icons";
+import { HamburgerIcon, CloseIcon, DownloadIcon } from "@chakra-ui/icons";
 import ToggleColorMode from "./ToggleColorMode";
 import { useTheme } from "@chakra-ui/react";
-
-interface Props {
-  children: React.ReactNode;
-}
 
 const LinkHeaders = [
     {
@@ -67,7 +56,7 @@ const NavLink = ({ linkto, linkheader }) => {
 
 export default function WithAction() {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const bg = useColorModeValue("red.500", "red.200");
+  // const bg = useColorModeValue("red.500", "red.200");
 //   const color = useColorModeValue("white", "gray.800");
   const theme = useTheme();
   console.log(theme);
@@ -78,7 +67,7 @@ export default function WithAction() {
         <ToggleColorMode />
       </Box>
       <Box
-        bg={useColorModeValue(colors.light.background, colors.dark.background)}
+        // bg={useColorModeValue(colors.light.background, colors.dark.background)}
         px={4}
       >
         <Flex
@@ -124,6 +113,7 @@ export default function WithAction() {
               _hover={{
                 
               }}
+              py={"20px"}
             >
               Resume
             </Button>

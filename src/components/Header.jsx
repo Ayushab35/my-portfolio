@@ -3,20 +3,12 @@ import {
   Box,
   Text,
   Flex,
-//   Grid,
-  useColorModeValue,
-//   Button,
   Image,
   VStack,
-//   HStack,
 } from "@chakra-ui/react";
-import Ayush from "../assets/ayush.jpeg";
 import Banner from "../assets/bannerImage.svg"
-import { useTheme } from "@chakra-ui/react";
 
 function Header() {
-    const theme = useTheme();
-    const { colors } = theme;
   return (
     <Flex
       direction={{ base: "column", md: "row" }}
@@ -36,18 +28,15 @@ function Header() {
           fontWeight="700"
           lineHeight={"57px"}
           fontFamily={"sans-serif"}
-        //   border={"3px solid green"}
+          //   border={"3px solid green"}
         >
           Full-stack web and mobile app developer, and amateur Guitarist.
         </Text>
         <Text>
-          I am Ayush Bhandarkar, a frontend developer with expertise in ReactJs
-          and NextJs. I have experience in building scalable, secure and
-          reliable web applications using various frameworks and technologies. I
-          enjoy solving complex problems and learning new skills. I am
-          passionate about creating high-quality code that follows best
-          practices and industry standards. I am always looking for new
-          challenges and opportunities to grow as a developer.
+          I'm Ayush Bhandarkar Lorem Ipsum is simply dummy text of the printing and
+          typesetting industry. Lorem Ipsum has been the industry's standard
+          dummy text ever since the 1500s, when an unknown printer took a galley
+          of type and scrambled it to specimen book.
         </Text>
       </VStack>
       <Box

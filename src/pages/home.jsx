@@ -1,13 +1,22 @@
-import React from 'react'
-import Header from '../components/Header'
-import ToggleColorMode from '../components/ToggleColorMode'
-import { Box } from "@chakra-ui/react";
-function home() {
+import React from "react";
+import Header from "../components/Header";
+
+// import { useTheme } from "@chakra-ui/react";
+import { Experience } from "../components/Experience";
+import { AllSkills } from "../components/AllSkills";
+import AboutMe from "../components/AboutMe";
+
+function Home() {
+  // const theme = useTheme();
+  // const { colors } = theme;
   return (
     <>
-        <Header />
+      <Header />
+      <AllSkills />
+      <Experience />
+      <AboutMe />
     </>
-  )
+  );
 }
 
-export default home
+export default Home;
