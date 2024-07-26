@@ -5,6 +5,7 @@ import Header from "../components/Header";
 import { Experience } from "../components/Experience";
 import { AllSkills } from "../components/AllSkills";
 import AboutMe from "../components/AboutMe";
+import Project from "../components/Project";
 
 function Home() {
   // const theme = useTheme();
@@ -15,6 +16,7 @@ function Home() {
       <AllSkills />
       <Experience />
       <AboutMe />
+      <Project />
     </>
   );
 }

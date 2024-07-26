@@ -1,12 +1,6 @@
 import React from "react";
-import {
-  Box,
-  Text,
-  Flex,
-  Image,
-  VStack,
-} from "@chakra-ui/react";
-import Banner from "../assets/bannerImage.svg"
+import { Box, Text, Flex, Image, VStack } from "@chakra-ui/react";
+import Banner from "../assets/bannerImage.svg";
 
 function Header() {
   return (
@@ -27,14 +21,14 @@ function Header() {
           fontSize="45px"
           fontWeight="700"
           lineHeight={"57px"}
-          fontFamily={"sans-serif"}
-          //   border={"3px solid green"}
+          fontFamily={"Sora"}
+          className="border-font"
         >
           Full-stack web and mobile app developer, and amateur Guitarist.
         </Text>
-        <Text>
-          I'm Ayush Bhandarkar Lorem Ipsum is simply dummy text of the printing and
-          typesetting industry. Lorem Ipsum has been the industry's standard
+        <Text fontFamily={"Sora"}>
+          I'm Ayush Bhandarkar Lorem Ipsum is simply dummy text of the printing
+          and typesetting industry. Lorem Ipsum has been the industry's standard
           dummy text ever since the 1500s, when an unknown printer took a galley
           of type and scrambled it to specimen book.
         </Text>
